@@ -1,0 +1,42 @@
+{
+    "name": "Prehistoric Fishing",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "arcade-background-scroll": "github:microsoft/arcade-background-scroll#6cfbf925b9a4d5ddf3e1078e6cf6ca6a1aebb301",
+        "sprite-scaling": "*",
+        "arcade-story": "github:microsoft/arcade-storytelling#v1.0.3",
+        "animation": "*",
+        "multiplayer": "*",
+        "arcade-tile-util": "github:microsoft/arcade-tile-util#v1.0.1",
+        "arcade-sprite-data": "github:microsoft/arcade-sprite-data#v0.2.1",
+        "arcade-text": "github:microsoft/arcade-text#v1.3.0",
+        "Sprite Grid": "github:microsoft/arcade-grid#v1.3.0",
+        "Timers": "github:microsoft/arcade-timers#v1.1.0"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json",
+        "tilemap.g.jres",
+        "tilemap.g.ts",
+        "images.g.jres",
+        "images.g.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "branch": "v1.12.30",
+        "tag": "v1.12.30",
+        "commits": "https://github.com/microsoft/pxt-arcade/commits/33228b1cc7e1bea3f728c26a6047bdef35fd2c09",
+        "target": "1.12.34",
+        "pxt": "8.5.41",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj"
+}
