@@ -2358,6 +2358,44 @@ cbdddddddd666dbbbcc.....
 ......cccbdddbccccccc...
 ........cdd666dc........
 `;
+            case "image67":
+            case "fin":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . f f f . . . 
+. . . . . . . . . f b b f . . . 
+. . . . . . . . f b b b f . . . 
+. . . . . . . f b b b b f . . . 
+. . . . . . f b b b b b f . . . 
+. . . . . f b b b b b b f . . . 
+. . . . f b b b b b b b f . . . 
+. . . . f b b b b b b b f . . . 
+. . . f b b b b b b b b f . . . 
+9 9 1 f f f f f f f f f f 1 9 9 
+. 9 1 1 9 9 1 9 1 1 9 9 1 1 9 . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`;
+            case "image68":
+            case "finright":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . f f f . . . . . . . . . . 
+. . . f b b f . . . . . . . . . 
+. . . f b b b f . . . . . . . . 
+. . . f b b b b f . . . . . . . 
+. . . f b b b b b f . . . . . . 
+. . . f b b b b b b f . . . . . 
+. . . f b b b b b b b f . . . . 
+. . . f b b b b b b b f . . . . 
+. . . f b b b b b b b b f . . . 
+9 9 1 f f f f f f f f f f 1 9 9 
+. 9 1 1 9 9 1 1 9 1 9 9 1 1 9 . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`;
         }
         return null;
     })

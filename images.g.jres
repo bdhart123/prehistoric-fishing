@@ -354,6 +354,16 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "Dinoright0"
     },
+    "image67": {
+        "data": "hwQQABAAAAAAAAAAAAAJAAAAAAAAAJkAAAAAAAAAEQAAAAAAAPAfAAAAAADwv58AAAAAAL+7nwAAAADwu7sfAAAAAL+7u58AAADwu7u7HwAAAL+7u7sfAADwu7u7u58AAPC7u7u7nwAA8P////8fAAAAAAAAABEAAAAAAAAAmQAAAAAAAAAJAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "fin"
+    },
+    "image68": {
+        "data": "hwQQABAAAAAAAAAAAAAJAAAAAAAAAJkAAAAAAAAAEQAA8P////8fAADwu7u7u58AAPC7u7u7nwAAAL+7u7sfAAAA8Lu7ux8AAAAAv7u7nwAAAADwu7sfAAAAAAC/u58AAAAAAPC/nwAAAAAAAPAfAAAAAAAAABEAAAAAAAAAmQAAAAAAAAAJAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "finright"
+    },
     "anim1": {
         "namespace": "myAnimations",
         "id": "anim1",
