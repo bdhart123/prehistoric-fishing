@@ -11,16 +11,16 @@ function boatfishing () {
         tiles.setCurrentTilemap(tilemap`level`)
         lake = 1
         if (playertype == 0) {
-            Wooden_Row_Boat = sprites.create(assets.image`woodenboatman`, SpriteKind.boat)
+            Wooden_Row_Boat = sprites.create(assets.image`woodencaveboatman`, SpriteKind.boat)
         }
         if (playertype == 1) {
-            Wooden_Row_Boat = sprites.create(assets.image`woodenboatmangb`, SpriteKind.boat)
+            Wooden_Row_Boat = sprites.create(assets.image`woodenboatcavegirl2`, SpriteKind.boat)
         }
         if (playertype == 2) {
-            Wooden_Row_Boat = sprites.create(assets.image`woodenboatmanB`, SpriteKind.boat)
+            Wooden_Row_Boat = sprites.create(assets.image`woodencaveboatman2`, SpriteKind.boat)
         }
         if (playertype == 3) {
-            Wooden_Row_Boat = sprites.create(assets.image`woodenboatmang`, SpriteKind.boat)
+            Wooden_Row_Boat = sprites.create(assets.image`woodenboatcavegirl`, SpriteKind.boat)
         }
         scaling.scaleByPercent(Wooden_Row_Boat, 75, ScaleDirection.Uniformly, ScaleAnchor.Middle)
         Wooden_Row_Boat.setPosition(105, 150)
@@ -33,16 +33,16 @@ function boatfishing () {
         tiles.setCurrentTilemap(tilemap`level`)
         lake = 2
         if (playertype == 0) {
-            Motorized_Boat = sprites.create(assets.image`raftboy1`, SpriteKind.boat)
+            Motorized_Boat = sprites.create(assets.image`raftcaveboy`, SpriteKind.boat)
         }
         if (playertype == 1) {
-            Motorized_Boat = sprites.create(assets.image`raftgirl1`, SpriteKind.boat)
+            Motorized_Boat = sprites.create(assets.image`raftcavegirl2`, SpriteKind.boat)
         }
         if (playertype == 2) {
-            Motorized_Boat = sprites.create(assets.image`raftboy2`, SpriteKind.boat)
+            Motorized_Boat = sprites.create(assets.image`raftcaveboy2`, SpriteKind.boat)
         }
         if (playertype == 3) {
-            Motorized_Boat = sprites.create(assets.image`raftgirl2`, SpriteKind.boat)
+            Motorized_Boat = sprites.create(assets.image`raftcavegirl`, SpriteKind.boat)
         }
         scaling.scaleByPercent(Motorized_Boat, 75, ScaleDirection.Uniformly, ScaleAnchor.Middle)
         Motorized_Boat.setPosition(100, 150)
@@ -67,16 +67,16 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Player, function (sprite, ot
 })
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     if (playertype == 0) {
-        mySprite.setImage(assets.image`Player`)
+        mySprite.setImage(assets.image`caveboy1left`)
     }
     if (playertype == 1) {
-        mySprite.setImage(assets.image`PlayerGb`)
+        mySprite.setImage(assets.image`Playercavegirl2`)
     }
     if (playertype == 2) {
-        mySprite.setImage(assets.image`PlayerB`)
+        mySprite.setImage(assets.image`caveboy1left2`)
     }
     if (playertype == 3) {
-        mySprite.setImage(assets.image`PlayerG`)
+        mySprite.setImage(assets.image`Playercavegirlleft`)
     }
 })
 function shop () {
@@ -165,80 +165,63 @@ function shop () {
 }
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     if (playertype == 0) {
-        mySprite.setImage(img`
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . e e e . . . . . . 
-            . . . . . . . e d d . . . . . . 
-            . . . . . . . d d d . . . . . . 
-            . . . . . . 2 2 2 2 2 . . . . . 
-            . . . . . . d d 2 2 d . . . . . 
-            . . . . . . d d 2 2 d . . . . . 
-            . . . . . . d d 2 2 d . . . . . 
-            . . . . . . . 8 8 8 . . . . . . 
-            . . . . . . . 8 8 8 . . . . . . 
-            . . . . . . . 8 8 8 . . . . . . 
-            . . . . . . . e e e . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            `)
+        mySprite.setImage(assets.image`caveboyright1`)
     }
     if (playertype == 1) {
-        mySprite.setImage(assets.image`PlayerGbr`)
+        mySprite.setImage(assets.image`Playercavegirl2right`)
     }
     if (playertype == 2) {
-        mySprite.setImage(assets.image`playerrb`)
+        mySprite.setImage(assets.image`caveboyright2`)
     }
     if (playertype == 3) {
-        mySprite.setImage(assets.image`playerrg`)
+        mySprite.setImage(assets.image`Playercavegirllright`)
     }
 })
 function fishing () {
     sprites.destroyAllSpritesOfKind(SpriteKind.Food)
     if (rodtype == 0) {
         if (playertype == 0) {
-            mySprite.setImage(assets.image`wooden`)
+            mySprite.setImage(assets.image`woodencaveboy1`)
         }
         if (playertype == 1) {
-            mySprite.setImage(assets.image`woodengb`)
+            mySprite.setImage(assets.image`woodencavegirl2`)
         }
         if (playertype == 2) {
-            mySprite.setImage(assets.image`woodenB`)
+            mySprite.setImage(assets.image`woodencaveboy2`)
         }
         if (playertype == 3) {
-            mySprite.setImage(assets.image`woodeng`)
+            mySprite.setImage(assets.image`woodencavegirl`)
         }
         music.play(music.createSoundEffect(WaveShape.Sine, 200, 600, 255, 0, 150, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
     } else {
         if (rodtype == 1) {
             if (playertype == 0) {
-                mySprite.setImage(assets.image`steel`)
+                mySprite.setImage(assets.image`caveboysteel`)
             }
             if (playertype == 1) {
-                mySprite.setImage(assets.image`steelgb`)
+                mySprite.setImage(assets.image`steelcavegirl2`)
             }
             if (playertype == 2) {
-                mySprite.setImage(assets.image`steelB`)
+                mySprite.setImage(assets.image`caveboysteel2`)
             }
             if (playertype == 3) {
-                mySprite.setImage(assets.image`steelg`)
+                mySprite.setImage(assets.image`steelcavegirl`)
             }
             music.play(music.createSoundEffect(WaveShape.Sine, 200, 600, 255, 0, 150, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
             catchofthedaay.removeAt(5)
         } else {
             if (rodtype == 2) {
                 if (playertype == 0) {
-                    mySprite.setImage(assets.image`gold`)
+                    mySprite.setImage(assets.image`caveboygold`)
                 }
                 if (playertype == 1) {
-                    mySprite.setImage(assets.image`goldg0`)
+                    mySprite.setImage(assets.image`goldcavegirl2`)
                 }
                 if (playertype == 2) {
-                    mySprite.setImage(assets.image`goldB`)
+                    mySprite.setImage(assets.image`caveboygold2`)
                 }
                 if (playertype == 3) {
-                    mySprite.setImage(assets.image`goldg`)
+                    mySprite.setImage(assets.image`goldcavegirl`)
                 }
                 music.play(music.createSoundEffect(WaveShape.Sine, 200, 600, 255, 0, 150, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
                 catchofthedaay.removeAt(5)
@@ -246,16 +229,16 @@ function fishing () {
             } else {
                 if (rodtype == 3) {
                     if (playertype == 0) {
-                        mySprite.setImage(assets.image`composite`)
+                        mySprite.setImage(assets.image`caveboycomposite`)
                     }
                     if (playertype == 1) {
-                        mySprite.setImage(assets.image`compositegb`)
+                        mySprite.setImage(assets.image`goldcavegirl0`)
                     }
                     if (playertype == 2) {
-                        mySprite.setImage(assets.image`compositeB`)
+                        mySprite.setImage(assets.image`caveboycomposite2`)
                     }
                     if (playertype == 3) {
-                        mySprite.setImage(assets.image`compositeg`)
+                        mySprite.setImage(assets.image`compositecavegirl`)
                     }
                     music.play(music.createSoundEffect(WaveShape.Sine, 200, 600, 255, 0, 150, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
                     catchofthedaay.removeAt(5)
@@ -363,16 +346,16 @@ function fishing () {
     }
     sprites.destroyAllSpritesOfKind(SpriteKind.Food)
     if (playertype == 0) {
-        mySprite.setImage(assets.image`Player`)
+        mySprite.setImage(assets.image`caveboy1left`)
     }
     if (playertype == 1) {
-        mySprite.setImage(assets.image`PlayerGb`)
+        mySprite.setImage(assets.image`Playercavegirl2`)
     }
     if (playertype == 2) {
-        mySprite.setImage(assets.image`PlayerB`)
+        mySprite.setImage(assets.image`caveboy1left2`)
     }
     if (playertype == 3) {
-        mySprite.setImage(assets.image`PlayerG`)
+        mySprite.setImage(assets.image`Playercavegirlleft`)
     }
     pause(1000)
 }
@@ -389,16 +372,16 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
             scene.setBackgroundImage(assets.image`Jurassic2`)
             tiles.setCurrentTilemap(tilemap`level1`)
             if (playertype == 0) {
-                mySprite = sprites.create(assets.image`Player`, SpriteKind.Player)
+                mySprite = sprites.create(assets.image`caveboy1left`, SpriteKind.Player)
             }
             if (playertype == 1) {
-                mySprite = sprites.create(assets.image`PlayerGb`, SpriteKind.Player)
+                mySprite = sprites.create(assets.image`Playercavegirl2`, SpriteKind.Player)
             }
             if (playertype == 2) {
-                mySprite = sprites.create(assets.image`PlayerB`, SpriteKind.Player)
+                mySprite = sprites.create(assets.image`caveboy1left2`, SpriteKind.Player)
             }
             if (playertype == 3) {
-                mySprite = sprites.create(assets.image`PlayerG`, SpriteKind.Player)
+                mySprite = sprites.create(assets.image`Playercavegirlleft`, SpriteKind.Player)
             }
             Shop_Keeper2 = sprites.create(img`
                 . . . . . . . . . . . . . . . . 
@@ -407,7 +390,7 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
                 . . . . . . . . . . . . . . . . 
                 . . . . . e e e . . . . . . . . 
                 . . . . . d d e . . . . . . . . 
-                . . . . . e e e . . . . . . . . 
+                . . . . . e e d . . . . . . . . 
                 . . . . d d f e d . . . . . . . 
                 . . . . d e f d d . . . . . . . 
                 . . . . d f e d d . . . . . . . 
@@ -473,6 +456,7 @@ let boattype = 0
 let rodtype = 0
 let catchofthedaay: number[] = []
 scene.setBackgroundImage(assets.image`ancient sea`)
+effects.bubbles.startScreenEffect(1000)
 let mySprite3 = sprites.create(assets.image`Ammonite`, SpriteKind.Player)
 animation.runMovementAnimation(
 mySprite3,
@@ -481,6 +465,14 @@ animation.animationPresets(animation.bobbing),
 false
 )
 mySprite3.setPosition(100, 100)
+let mySprite4 = sprites.create(assets.image`Bothriolepsisleft`, SpriteKind.Player)
+animation.runMovementAnimation(
+mySprite4,
+animation.animationPresets(animation.bobbingLeft),
+5000,
+false
+)
+mySprite4.setPosition(135, 15)
 let mySprite2 = sprites.create(assets.image`Dunkleosteus`, SpriteKind.Player)
 mySprite2.setPosition(0, 0)
 animation.runMovementAnimation(
@@ -513,19 +505,19 @@ tiles.setCurrentTilemap(tilemap`level1`)
 scene.setBackgroundImage(assets.image`Jurassic2`)
 if (story.checkLastAnswer("Boy 1")) {
     playertype = 0
-    mySprite = sprites.create(assets.image`Player`, SpriteKind.Player)
+    mySprite = sprites.create(assets.image`caveboy1left`, SpriteKind.Player)
 }
 if (story.checkLastAnswer("Girl 1")) {
     playertype = 1
-    mySprite = sprites.create(assets.image`PlayerGb`, SpriteKind.Player)
+    mySprite = sprites.create(assets.image`Playercavegirl2`, SpriteKind.Player)
 }
 if (story.checkLastAnswer("Boy 2")) {
     playertype = 2
-    mySprite = sprites.create(assets.image`PlayerB`, SpriteKind.Player)
+    mySprite = sprites.create(assets.image`caveboy1left2`, SpriteKind.Player)
 }
 if (story.checkLastAnswer("Girl 2")) {
     playertype = 3
-    mySprite = sprites.create(assets.image`PlayerG`, SpriteKind.Player)
+    mySprite = sprites.create(assets.image`Playercavegirlleft`, SpriteKind.Player)
 }
 Shop_Keeper2 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
@@ -554,7 +546,7 @@ mySprite.ay = 200
 scene.cameraFollowSprite(mySprite)
 controller.moveSprite(mySprite, 100, 0)
 info.setScore(0)
-game.onUpdateInterval(randint(30000, 90000), function () {
+game.onUpdateInterval(randint(60000, 120000), function () {
     sprites.destroyAllSpritesOfKind(SpriteKind.Projectile)
     if (lake == 0) {
         timer.after(500, function () {

@@ -271,35 +271,6 @@
         ],
         "displayName": "level9"
     },
-    "level1": {
-        "id": "level1",
-        "mimeType": "application/mkcd-tilemap",
-        "data": "MTAxMDAwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDBlMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBhMGIwYzAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDkxMDExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAxMjA4MTMwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDE0MTQxNDAwMDQwNDA0MDQwNDA0MDIwMTAxMDEwMTAxMDEwMTAxMDEwNDA0MDQwNDA0MDQwNTAzMDMwMzAzMDMwMzAzMDMwMzA0MDQwNDA0MDQwNDA1MDMwMzAzMDMwMzAzMDMwMzAzMDQwNDA0MDQwNDA0MDUwMzAzMDMwMzAzMDMwMzAzMDMwNDA0MDQwNDA0MDYwNzAzMDMwMzAzMDMwMzAzMDMwMzA0MDQwNDA0MDYwNzAzMDMwMzAzMDMwMzAzMDMwMzAzMDAwMDIwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMjAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMjAwMDAwMDAyMjIyMDAwMDIwMDAwMDAwMjIyMjAwMDAyMDAwMDAwMDIyMjIwMDAwMjAwMDAwMDAyMjIyMDAwMDIwMDAwMDAwMjIyMjAwMDAwMDIyMjIyMjIyMjIwMDAwMDAyMjIyMjIyMjIyMDAwMDAwMjIyMjIyMjIyMjAwMDAwMDIyMjIyMjIyMjIwMDAwMjAyMjIyMjIyMjIyMDAwMDIyMjIyMjIyMjIyMg==",
-        "tileset": [
-            "myTiles.transparency16",
-            "myTiles.tile2",
-            "myTiles.tile7",
-            "myTiles.tile8",
-            "myTiles.tile1",
-            "myTiles.tile12",
-            "myTiles.tile13",
-            "myTiles.tile14",
-            "myTiles.tile16",
-            "myTiles.tile17",
-            "myTiles.tile18",
-            "myTiles.tile19",
-            "myTiles.tile20",
-            "myTiles.tile22",
-            "myTiles.tile23",
-            "myTiles.tile25",
-            "myTiles.tile26",
-            "myTiles.tile27",
-            "myTiles.tile21",
-            "myTiles.tile28",
-            "sprites.castle.tilePath5"
-        ],
-        "displayName": "level1"
-    },
     "level10": {
         "id": "level10",
         "mimeType": "application/mkcd-tilemap",
@@ -326,6 +297,36 @@
             "myTiles.transparency16"
         ],
         "displayName": "level13"
+    },
+    "level1": {
+        "id": "level1",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxMDAwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwYjBjMGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA4MDkwYTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDcwZTBmMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAxMDA2MTEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDEyMTIxMjAwMDQwNDA0MDQwNDA0MDIwMTAxMDEwMTAxMDEwMTAxMDEwNDA0MDQwNDA0MTMwNTAzMDMwMzAzMDMwMzAzMDMwMzA0MDQwNDA0MTMxNDA1MDMwMzAzMDMwMzAzMDMwMzAzMDQwNDA0MTMwNTE0MDUwMzAzMDMwMzAzMDMwMzAzMDMwNDA0MTMwNTA1MDUwNTAzMDMwMzAzMDMwMzAzMDMwMzA0MTMwNTE1MDUwNTAzMDMwMzAzMDMwMzAzMDMwMzAzMDAwMDIwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMjAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMjAwMDAwMDAyMjIyMDAwMDIwMDAwMDAwMjIyMjAwMDAyMDAwMDAwMDIyMjIwMDAwMjAwMDAwMDAyMjIyMDAwMDIwMDAwMDAwMjIyMjAwMDAwMDIyMjIyMjIyMjIwMDAwMDAyMjIyMjIyMjIyMDAwMDAwMjIyMjIyMjIyMjAwMDAwMDIyMjIyMjIyMjIwMDAwMjAyMjIyMjIyMjIyMDAwMDIyMjIyMjIyMjIyMg==",
+        "tileset": [
+            "myTiles.transparency16",
+            "myTiles.tile2",
+            "myTiles.tile7",
+            "myTiles.tile8",
+            "myTiles.tile1",
+            "myTiles.tile14",
+            "myTiles.tile16",
+            "myTiles.tile17",
+            "myTiles.tile18",
+            "myTiles.tile19",
+            "myTiles.tile20",
+            "myTiles.tile22",
+            "myTiles.tile23",
+            "myTiles.tile25",
+            "myTiles.tile26",
+            "myTiles.tile27",
+            "myTiles.tile21",
+            "myTiles.tile28",
+            "sprites.castle.tilePath5",
+            "myTiles.tile11",
+            "myTiles.tile10",
+            "myTiles.tile9"
+        ],
+        "displayName": "level1"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",
