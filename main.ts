@@ -117,7 +117,7 @@ function shop () {
             }
         }
     } else if (story.checkLastAnswer("More Options")) {
-        story.showPlayerChoices("Monster catch fishing rod ($700)", "Wooden row boat ($800)", "Big raft ($1,000)", "Bye")
+        story.showPlayerChoices("Monster catch fishing rod ($700)", "Wooden row boat ($800)", "Big raft ($1,000)", "Credits")
         if (story.checkLastAnswer("Monster catch fishing rod ($700)")) {
             if (info.score() < 700) {
                 music.play(music.melodyPlayable(music.wawawawaa), music.PlaybackMode.InBackground)
@@ -157,9 +157,9 @@ function shop () {
                 boattype = 2
             }
         }
-        if (story.checkLastAnswer("Bye")) {
+        if (story.checkLastAnswer("Credits")) {
             controller.moveSprite(mySprite, 100, 0)
-            story.spriteSayText(Shop_Keeper2, "Ugh!", 15)
+            game.showLongText("Coded by Ethan Chambers (10) & Michael Twigg (10) in collaboration with Mr. Hartung (Robotics Coach)", DialogLayout.Bottom)
         }
     }
 }
